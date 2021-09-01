@@ -7,7 +7,7 @@ const reducer = (state=initialState, action) => {
 			return {
 				...state,
 				displayInput: [state.displayInput]
-								.concat([action.payload.replace(/^0/, '')])
+								.concat([action.payload])
 								.join('')
 								.replace(/^0/, '')
 								.replace(/[\W](?=\W*[\W])/g, '')
