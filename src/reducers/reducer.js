@@ -11,6 +11,7 @@ const reducer = (state=initialState, action) => {
 								.join('')
 								.replace(/^0/, '')
 								.replace(/[\W](?=\W*[\W])/g, '')
+								//.replace(/(\W0[1-9]$)/g, '')
 			}
 		case 'DISPLAY_RESULT':
 			return {
