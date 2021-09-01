@@ -4,4 +4,67 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: gray;
+	.calculatorContainer {
+		border: solid;
+		width: 21em;
+		height: 80vh;
+		display: grid;
+		grid-template-rows: 15% 85%;
+		padding: 0.5em;
+		#display {
+			border: solid;
+		}
+		.buttons {
+			border: solid;
+			#equals {
+
+			}
+			#zero {
+
+			}
+			#one {
+
+			}
+			#two {
+
+			}
+			#three {
+
+			}
+			#four {
+
+			}
+			#five {
+
+			}
+			#six {
+
+			}
+			#seven {
+
+			}
+			#eight {
+
+			}
+			#nine {
+
+			}
+			#substract {
+
+			}
+			#multiply {
+
+			}
+			#divide {
+
+			}
+			#decimal {
+
+			}
+			#clear {
+				
+			}
+		}
+	}
 }
