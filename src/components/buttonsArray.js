@@ -11,7 +11,7 @@ let btns =
     },
     {
     	id: 'multiply',
-    	value: 'x',
+    	value: '*',
     },
     {
     	id: 'seven',
@@ -72,4 +72,6 @@ let btns =
 
 ]
 
-export default btns;
+export default btns
+console.log('5-*---6'.replace(/[\W](?=\W*[\W])/g, ''))
+console.log('5-*6'.match(/\W/g))
