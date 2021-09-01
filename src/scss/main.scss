@@ -17,18 +17,21 @@
 		}
 		.buttons {
 			border: solid;
+			display: grid;
 			grid-template-areas: 
 			'clear clear divide multiply'
 			'seven eight nine substract'
 			'four five six add'
 			'one two three equals'
-			'zero zero decimal equals'
-			;
+			'zero zero decimal equals';
 			#equals {
-				grid-area: 'equals'
+				grid-area: 'equals';
+				grid-row: 4 / span 2;
+				grid-column: 4;
 			}
 			#zero {
 				grid-area: 'zero';
+				grid-column: 1 / span 2;
 			}
 			#one {
 				grid-area: 'one';
@@ -74,6 +77,7 @@
 			}
 			#clear {
 				grid-area: 'clear';
+				grid-column: 1 / span 2;
 			}
 		}
 	}

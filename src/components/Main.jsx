@@ -17,6 +17,6 @@ const Main = () =>
 
 const Button = ({id, value}) => 
 				<button id={id}>
-					{value}
+					{ovalue}
 				</button>
-export default Main;
+export default connect(mapStateToProps, mapDispatchToProps)(Main)
