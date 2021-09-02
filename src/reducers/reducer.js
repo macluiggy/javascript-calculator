@@ -1,5 +1,5 @@
 const initialState = {
-	displayInput: 0,
+	displayInput: '6*0o4',
 }
 const reducer = (state=initialState, action) => {
 	switch (action.type) {
@@ -11,6 +11,7 @@ const reducer = (state=initialState, action) => {
 								.join('')
 								.replace(/^0/, '')
 								.replace(/[\W](?=\W*[\W])/g, '')
+								//.replace(/[^\d0]*/g)
 								//.replace(/(\W0[1-9]$)/g, '')
 			}
 		case 'DISPLAY_RESULT':
