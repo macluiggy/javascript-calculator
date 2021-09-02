@@ -23,7 +23,8 @@ const reducer = (state=initialState, action) => {
 				...state,
 				displayInput: eval(state
 									.displayInput
-									.replace(/\W$/, '')),
+									.replace(/\W$/, '')
+					 				).toFixed(4),
 
 			}
 		case 'CLEAR_INPUT':
