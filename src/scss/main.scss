@@ -26,6 +26,7 @@
 			background-color: #7C8C7E;
 			font-family: Orbitron;
 			font-size: 1.3em !important;
+			border-radius: 0.5em;
 		}
 		.buttons {
 			grid-gap: 0.01em;
@@ -92,7 +93,7 @@
 				grid-area: 'add';
 				background-color: $operatorsColor;
 			}
-			#substract {
+			#subtract {
 				background-color: $operatorsColor;
 				grid-area: 'substract'
 			}

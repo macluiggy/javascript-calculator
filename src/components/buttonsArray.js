@@ -26,7 +26,7 @@ let btns =
     	value: 9
     },
     {
-    	id: 'substract',
+    	id: 'subtract',
     	value: '-'
     },
     {

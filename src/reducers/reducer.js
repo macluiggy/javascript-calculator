@@ -14,6 +14,7 @@ const reducer = (state=initialState, action) => {
 								//.replace(/(?!\W)0+(?=[1-9]*[1-9]$)/g, '')
 								.replace(/\W0+(?=[1-9]*[1-9]$)/g, x => x.match(/\W/g))
 								.replace(/\W+(?=(\/|\*(-|\+)?))/g, '')
+								.replace(/\.*(?=\.)/g, '')
 								//.replace(/\W+(?=\W-?)/g, '')
 								//.replace(/[^\d0]*/g)
 								//.replace(/(\W0[1-9]$)/g, '')
@@ -23,7 +24,8 @@ const reducer = (state=initialState, action) => {
 				...state,
 				displayInput: parseFloat(eval(state
 									.displayInput
-									.replace(/^\W|\W$/, '')
+									.replace(/^\W/, '')
+									.replace(/\W$/g, '')
 					 				).toFixed(4)),
 
 			}
