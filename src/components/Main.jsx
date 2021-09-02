@@ -28,7 +28,7 @@ const Main = ({ state, updateInputDisplay, displayResult, clearInputDisplay }) =
 		)
 }
 
-
+console.log(8*3)
 const Button = ({ 
 				id, 
 				value, 
