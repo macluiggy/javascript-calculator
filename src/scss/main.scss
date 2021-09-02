@@ -1,21 +1,31 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
 .container {
-	border: solid;
+	//border: solid;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: gray;
+	background-color: #CFF0DB;
+	font-family: 'Share Tech Mono';
 	.calculatorContainer {
+		background-color: #0E0E3E;
 		border: solid;
 		width: 21em;
 		height: 80vh;
 		display: grid;
+		grid-gap: 0.2em;
 		grid-template-rows: 15% 85%;
 		padding: 0.5em;
 		#display {
 			border: solid;
+			display: flex;
+			align-items: center;
+			padding-left: 1em;
+			background-color: #7C8C7E;
 		}
 		.buttons {
+			grid-gap: 0.01em;
+			font-size: 100px;
 			border: solid;
 			display: grid;
 			grid-template-areas: 
@@ -24,60 +34,80 @@
 			'four five six add'
 			'one two three equals'
 			'zero zero decimal equals';
+
+			$operatorsColor: #070649;
+			$numbersColor: #8D928D;
 			#equals {
 				grid-area: 'equals';
 				grid-row: 4 / span 2;
 				grid-column: 4;
+				background-color: $operatorsColor;
 			}
 			#zero {
 				grid-area: 'zero';
 				grid-column: 1 / span 2;
+				background-color: $numbersColor;
 			}
 			#one {
 				grid-area: 'one';
+				background-color: $numbersColor;
 			}
 			#two {
 				grid-area: 'two';
+				background-color: $numbersColor;
 			}
 			#three {
 				grid-area: 'three';
+				background-color: $numbersColor;
 			}
 			#four {
 				grid-area: 'four';
+				background-color: $numbersColor;
 			}
 			#five {
 				grid-area: 'five';
+				background-color: $numbersColor;
 			}
 			#six {
 				grid-area: 'six';
+				background-color: $numbersColor;
 			}
 			#seven {
 				grid-area: 'seven';
+				background-color: $numbersColor;
 			}
 			#eight {
 				grid-area: 'eight';
+				background-color: $numbersColor;
 			}
 			#nine {
 				grid-area: 'nine';
+				background-color: $numbersColor;
 			}
 			#add {
 				grid-area: 'add';
+				background-color: $operatorsColor;
 			}
 			#substract {
+				background-color: $operatorsColor;
 				grid-area: 'substract'
 			}
 			#multiply {
+				background-color: $operatorsColor;
 				grid-area: 'multiply';
 			}
 			#divide {
+				background-color: $operatorsColor;
 				grid-area: 'divide';
 			}
 			#decimal {
 				grid-area: 'decimal';
+				background-color: $numbersColor;
 			}
 			#clear {
 				grid-area: 'clear';
 				grid-column: 1 / span 2;
+				background-color: #CA2A08;
 			}
 		}
 	}

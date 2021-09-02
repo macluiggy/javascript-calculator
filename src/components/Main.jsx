@@ -10,7 +10,11 @@ const Main = ({ state, updateInputDisplay, displayResult, clearInputDisplay }) =
 	return (
 		<div className='container'>
 			<div className='calculatorContainer'>
-				<div id='display'>
+				<div
+				 id='display'
+				 style={{
+				 	fontSize: '2.0em',
+				 }} >
 					{ displayInput }
 				</div>
 				<div className='buttons'>
@@ -37,6 +41,10 @@ const Button = ({
 				clearInputDisplay,
 			}) => 
 				<button
+				style={{
+					fontSize: '0.3em',
+					color: 'white',
+				}}
 				 id={id}
 				 onClick={(e) => {
 				 	if (value === '=') {

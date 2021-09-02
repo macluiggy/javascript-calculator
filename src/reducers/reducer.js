@@ -1,5 +1,5 @@
 const initialState = {
-	displayInput: 0,
+	displayInput: '0',
 }
 
 const reducer = (state=initialState, action) => {
@@ -21,10 +21,10 @@ const reducer = (state=initialState, action) => {
 		case 'DISPLAY_RESULT':
 			return {
 				...state,
-				displayInput: eval(state
+				displayInput: parseFloat(eval(state
 									.displayInput
-									.replace(/\W$/, '')
-					 				).toFixed(4),
+									.replace(/^\W|\W$/, '')
+					 				).toFixed(4)),
 
 			}
 		case 'CLEAR_INPUT':
