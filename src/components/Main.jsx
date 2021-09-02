@@ -6,7 +6,7 @@ import btns from './buttonsArray.js';
 const Main = ({ state, updateInputDisplay, displayResult, clearInputDisplay }) => 
 {
 	const { displayInput } = state.inputState;
-	console.log(eval('8 + 5'))
+	//console.log(eval('8 + 5'))
 	return (
 		<div className='container'>
 			<div className='calculatorContainer'>
@@ -28,7 +28,7 @@ const Main = ({ state, updateInputDisplay, displayResult, clearInputDisplay }) =
 		)
 }
 
-console.log(8*3)
+//console.log(8*3)
 const Button = ({ 
 				id, 
 				value, 
