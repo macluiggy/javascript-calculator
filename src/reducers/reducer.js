@@ -13,7 +13,8 @@ const reducer = (state=initialState, action) => {
 								.replace(/^0/, '')
 								//.replace(/(?!\W)0+(?=[1-9]*[1-9]$)/g, '')
 								.replace(/\W0+(?=[1-9]*[1-9]$)/g, x => x.match(/\W/g))
-								.replace(/\W+(?=\W)/g, '')
+								.replace(/\W+(?=(\/|\*(-|\+)?))/g, '')
+								//.replace(/\W+(?=\W-?)/g, '')
 								//.replace(/[^\d0]*/g)
 								//.replace(/(\W0[1-9]$)/g, '')
 			}
